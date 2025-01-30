@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Status Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #00ff00;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .container {
+            padding: 40px;
+            background-color: #333;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.7);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+        h1 {
+            color: #00ff00;
+            font-size: 36px;
+        }
+        .status {
+            font-size: 22px;
+            color: #ffcc00;
+        }
+        .coordinates {
+            font-size: 28px;
+            color: #ff0000;
+            font-weight: bold;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section p {
+            font-size: 20px;
+            color: #00ff00;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        a {
+            color: #00ff00;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert("DON'T MESS WITH ANONYMOUS MEMBERS!!!");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Device Status Report</h1>
+
+        <div class="section">
+            <p><span class="highlight">Coordinates Detected:</span></p>
+            <p class="coordinates">19°11'20"N 77°16'57"E</p>
+            <p><span class="highlight">Location:</span> Nanded, Maharashtra, India</p>
+        </div>
+
+        <div class="section">
+            <p><span class="highlight">Device Information:</span></p>
+            <p>Device Model: OnePlus Nord 2022</p>
+            <p>Operating System: Android 12</p>
+            <p>Processor: Qualcomm Snapdragon 695</p>
+            <p>RAM: 8GB</p>
+            <p>Storage: 128GB</p>
+        </div>
+
+        <div class="section">
+            <p><span class="highlight">Network Information:</span></p>
+            <p>IP Address: <span class="status">192.168.1.100</span></p>
+            <p>Connection Type: <span class="status">Wi-Fi</span></p>
+            <p>Signal Strength: <span class="status">Strong</span></p>
+            <p>Internet Speed: <span class="status">50 Mbps</span></p>
+        </div>
+
+        <div class="section">
+            <p><span class="highlight">Connection Status:</span></p>
+            <p>Device Status: <span class="status">Online</span></p>
+            <p>Connection Type: <span class="status">Secure</span></p>
+            <p>Encryption Status: <span class="status">End-to-End</span></p>
+            <p>Active Connections: <span class="status">3</span></p>
+        </div>
+
+        <div class="section">
+            <p><span class="highlight">Recent Activity:</span></p>
+            <p>Last Logged In: <span class="status">5 minutes ago</span></p>
+            <p>For more details about your location, click the link below:</p>
+            <p><a href="https://www.google.com/maps?q=19.1889,77.2825" target="_blank">Click here to see your location on Google Maps</a></p>
+        </div>
+
+        <div class="section">
+            <p><span class="highlight">Mystery Link:</span></p>
+            <p><a href="javascript:void(0);" onclick="showMessage()">Click here to uncover the secret message</a></p>
+        </div>
+    </div>
+</body>
+</html>
